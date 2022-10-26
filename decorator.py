@@ -1,13 +1,10 @@
 
-def add(x, y):
-    return x + y
+def outer():
+    x = 1
+    def inner():
+        print(x)
+    return inner
 
-def sub(x, y):
-    return x - y
+foo = outer()
 
-def apply(func, x, y):
-    return func(x, y)
-
-print(apply(add, 2, 1))
-
-print(apply(sub, 2, 1))
+print(foo.__closure__)
