@@ -1,8 +1,9 @@
 
-def foo(arg):
-    x = 10
+text = 'I am global!'
+
+def foo():
+    text = 'I am local!'
     print(locals())
      
-foo(20)
-y = 30
+foo()
 print(globals())
