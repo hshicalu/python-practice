@@ -1,9 +1,6 @@
 
-text = 'I am global!'
 
-def foo():
-    text = 'I am local!'
-    print(locals())
-     
-foo()
-print(globals())
+def foo(x, y=0):
+    return x - y
+
+print(foo(x=3))
