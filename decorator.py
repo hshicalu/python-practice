@@ -1,8 +1,5 @@
 
-def outer():
-    x = 1
-    def inner():
-        print(x)
-    inner()
+def foo():
+    pass
 
-outer()
+print(foo.__class__)
