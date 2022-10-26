@@ -2,4 +2,4 @@
 def foo():
     pass
 
-print(foo.__class__)
+print(issubclass(foo.__class__, object))
