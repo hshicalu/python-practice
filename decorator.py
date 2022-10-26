@@ -4,4 +4,5 @@ def foo(arg):
     print(locals())
      
 foo(20)
-
+y = 30
+print(globals())
